@@ -1,0 +1,175 @@
+*{
+   box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+:root {
+    --main-bg-color:#fed051;
+    }
+header{ display: flex;
+        width:100%;
+        margin: auto;
+        border: 1px solid black;
+    }
+/*******    photo candidat  *****/
+img{
+    margin-top:35px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    border: rgb(26,26,26);
+    border-style: outset;
+    max-height: 100px;
+}
+.miniature{text-align: center;
+  }
+/**********************sectionn gauche *********************/ 
+#sectionLeft
+{
+    background-color: var(--main-bg-color);
+    width: 27%;
+    height: auto;
+}
+h3.h{
+    margin-top: 10px;
+}
+h5{
+background-color: black;
+color: var(--main-bg-color);
+font-weight:bold;
+font-size:1.1rem;
+text-align: center;
+padding: 5px;
+}
+aside.propos{
+    margin-top: 20px; 
+    padding:0px  20px 20px 20px;
+    border: rgb(26,26,26);
+    margin-bottom: 20px;
+  }
+.propos{
+    text-align: justify-all;
+}
+h5.loisirs{
+    margin-top: 100px;
+}
+h6{
+    padding: 20px;
+}
+aside.loisi{
+    display:flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    flex: 2;    
+}
+aside.loisi i{
+    font-size: 37px;
+    }
+/*********************************************
+            section  DROITE    *******************/
+#sectionRight {
+    background-color:white;
+    padding-left: 60px;
+    width: 73%;
+}
+    
+.section-formation{
+margin-top: 50px;
+font-weight: bold;
+}
+#shortLine{
+    width: 42px;
+    height: 2px;
+    margin-top: 2px;
+    background-color: var(--main-bg-color);
+  }
+#shortLine2{
+    width: 100%;
+    height: 2px;
+     margin-top: 6px;
+    background-color: var(--main-bg-color);
+    /*display:table;*/
+}
+.name{
+    margin-top: 55px;
+    font-weight: bold;
+    color:var(--main-bg-color);
+    font-size: 185%;
+}
+.name em{
+    color: black;
+}
+
+/******  section  droite   Tableaux ****************/  
+
+table {
+    border-collapse: collapse;
+    width:100%;
+}
+
+ th, td {
+    text-align: left; 
+     padding: 15px;
+  }
+td:first-child {
+    width:30%;
+}
+
+
+#t01 {
+    margin-top: 50px;
+} 
+.fa-graduation-cap{
+    color:var(--main-bg-color);
+}
+#t02{
+    margin-top: 30px
+}
+.fa-wrench{
+    color:var(--main-bg-color);
+}
+#t03{
+    margin-top: 30px;
+}
+table #t03 {
+    width:100%;
+}
+.fa-id-card{
+    color: var(--main-bg-color);
+}
+.fa-chalkboard-teacher{
+    color:var(--main-bg-color);
+}
+.fa-dot-circle{
+    color: var(--main-bg-color);
+} 
+.fa-circle.fa-xs{
+    color: var(--main-bg-color);
+}
+.fa-pencil-alt{
+    color: var(--main-bg-color);
+}
+.fa-music{
+    color: black;
+}
+.fa-futbol-o{
+    color: black;
+}
+.fa-camera{
+    color: black;
+}
+/*****************fin  tableaux***********************/
+
+/***********Média  querie***with directive CSS******  Responsive Design  side ************/  
+@media screen and (max-width:600px)
+{
+      header {
+                width: 100%;           
+                 flex-direction:column;
+      }
+      #sectionLeft{
+        width:100%;
+        }
+     #sectionRght{
+        width:100%;
+       }
+}
